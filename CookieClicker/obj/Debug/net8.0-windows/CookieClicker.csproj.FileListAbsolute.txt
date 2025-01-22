@@ -1,0 +1,16 @@
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\bin\Debug\net8.0-windows\CookieClicker.exe
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\bin\Debug\net8.0-windows\CookieClicker.deps.json
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\bin\Debug\net8.0-windows\CookieClicker.runtimeconfig.json
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\bin\Debug\net8.0-windows\CookieClicker.dll
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\bin\Debug\net8.0-windows\CookieClicker.pdb
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\obj\Debug\net8.0-windows\FirstWinForm.DatabaseView.resources
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\obj\Debug\net8.0-windows\CookieClicker.csproj.GenerateResource.cache
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\obj\Debug\net8.0-windows\CookieClicker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\obj\Debug\net8.0-windows\CookieClicker.AssemblyInfoInputs.cache
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\obj\Debug\net8.0-windows\CookieClicker.AssemblyInfo.cs
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\obj\Debug\net8.0-windows\CookieClicker.csproj.CoreCompileInputs.cache
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\obj\Debug\net8.0-windows\CookieClicker.dll
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\obj\Debug\net8.0-windows\refint\CookieClicker.dll
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\obj\Debug\net8.0-windows\CookieClicker.pdb
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\obj\Debug\net8.0-windows\CookieClicker.genruntimeconfig.cache
+C:\Users\stepa\Desktop\DatabaseConnect\CookieClicker\obj\Debug\net8.0-windows\ref\CookieClicker.dll

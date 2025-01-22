@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseConnection", "DatabaseConnection\DatabaseConnection.csproj", "{EC827BFF-F00F-4F0B-9A61-D86629A947A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieClicker", "CookieClicker\CookieClicker.csproj", "{37EBAD71-9B4D-4A2D-84E9-47230B5FC498}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseViewForm", "DatabaseViewForm\DatabaseViewForm.csproj", "{7E7BBE33-23A6-49DB-9536-FE66EFF3693A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC827BFF-F00F-4F0B-9A61-D86629A947A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC827BFF-F00F-4F0B-9A61-D86629A947A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC827BFF-F00F-4F0B-9A61-D86629A947A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC827BFF-F00F-4F0B-9A61-D86629A947A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37EBAD71-9B4D-4A2D-84E9-47230B5FC498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37EBAD71-9B4D-4A2D-84E9-47230B5FC498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37EBAD71-9B4D-4A2D-84E9-47230B5FC498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37EBAD71-9B4D-4A2D-84E9-47230B5FC498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E7BBE33-23A6-49DB-9536-FE66EFF3693A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E7BBE33-23A6-49DB-9536-FE66EFF3693A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E7BBE33-23A6-49DB-9536-FE66EFF3693A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E7BBE33-23A6-49DB-9536-FE66EFF3693A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
