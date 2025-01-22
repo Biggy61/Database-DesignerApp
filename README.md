@@ -1,1 +1,2 @@
-# Database-ConnectionApp
+# CookieClicker & Database app 
+using Designer, MySqlConnector
