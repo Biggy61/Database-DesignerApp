@@ -2,9 +2,13 @@ namespace DatabaseViewForm;
 
 public partial class DatabaseViewForm : Form
 {
+    private DBDriver _dbDriver;
+
     public DatabaseViewForm()
     {
         InitializeComponent();
+        this.ActiveControl = FetchButton;
+        FetchButton.Focus();
     }
 
 
@@ -33,6 +37,7 @@ public partial class DatabaseViewForm : Form
 
     private void PopulateListView(List<User> users)
     {
+        UserListView.Items.Clear();
         foreach (var user in users)
         {
             ListViewItem item = new ListViewItem();
@@ -44,11 +49,55 @@ public partial class DatabaseViewForm : Form
         }
     }
 
+    private void Login()
+    {
+        ErrorLabel.Text = "";
+        if (_dbDriver is null)
+        {
+            _dbDriver = new DBDriver(PasswordTextBox.Text);
+        }
+
+        PasswordTextBox.Text = "";
+    }
+
+    private void LoadUsers()
+    {
+        List<User> users = _dbDriver.GetUsers();
+        if (_dbDriver.ThrownException is not null)
+        {
+            ErrorLabel.Text = _dbDriver.ThrownException.Message;
+            _dbDriver.ThrownException = null;
+            _dbDriver = null;
+        }
+        else
+        {
+            PopulateListView(users);
+        }
+    }
+
     private void FetchButton_Click(object sender, EventArgs e)
     {
-        DBDriver dbDriver = new DBDriver(PasswordTextBox.Text);
-        List<User> users = dbDriver.GetUsers();
-        Console.WriteLine(users.Count);
-        PopulateListView(users);
+        Login();
+        LoadUsers();
+    }
+
+    private void PasswordTextBox_KeyDown(object sender, KeyEventArgs e)
+    {
+        if (e.KeyCode == Keys.Enter)
+        {
+            Login();
+            LoadUsers();
+        }
+    }
+
+    private void Insert_Button_Click(object sender, EventArgs e)
+    {
+        _dbDriver.Insert(Insert_TextBox.Text);
+    }
+
+
+    private void Delete_Button_Click(object sender, EventArgs e)
+    {
+        _dbDriver.Delete((Delete_TextBox.Text));
     }
 }
