@@ -29,24 +29,26 @@ partial class DatabaseViewForm
     /// </summary>
     private void InitializeComponent()
     {
-        listView1 = new System.Windows.Forms.ListView();
+        UserListView = new System.Windows.Forms.ListView();
         idCol = new System.Windows.Forms.ColumnHeader();
         nameCol = new System.Windows.Forms.ColumnHeader();
         dateCreated = new System.Windows.Forms.ColumnHeader();
         dateModified = new System.Windows.Forms.ColumnHeader();
         PasswordTextBox = new System.Windows.Forms.TextBox();
-        button = new System.Windows.Forms.Button();
+        FetchButton = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
-        // listView1
+        // UserListView
         // 
-        listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { idCol, nameCol, dateCreated, dateModified });
-        listView1.Location = new System.Drawing.Point(142, 43);
-        listView1.Name = "listView1";
-        listView1.Size = new System.Drawing.Size(371, 257);
-        listView1.TabIndex = 0;
-        listView1.UseCompatibleStateImageBehavior = false;
-        listView1.View = System.Windows.Forms.View.Details;
+        UserListView.AccessibleName = "UserListView";
+        UserListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { idCol, nameCol, dateCreated, dateModified });
+        UserListView.Location = new System.Drawing.Point(142, 43);
+        UserListView.Name = "UserListView";
+        UserListView.Size = new System.Drawing.Size(371, 257);
+        UserListView.TabIndex = 0;
+        UserListView.UseCompatibleStateImageBehavior = false;
+        UserListView.View = System.Windows.Forms.View.Details;
+
         // 
         // idCol
         // 
@@ -80,30 +82,31 @@ partial class DatabaseViewForm
         PasswordTextBox.Enter += PasswordTextBox_Enter;
         PasswordTextBox.Leave += PasswordTextBox_Leave;
         // 
-        // button
+        // FetchButton
         // 
-        button.Location = new System.Drawing.Point(610, 383);
-        button.Name = "button";
-        button.Size = new System.Drawing.Size(75, 23);
-        button.TabIndex = 2;
-        button.Text = "fetch";
-        button.UseVisualStyleBackColor = true;
-        button.Click += button_Click;
+        FetchButton.AccessibleName = "FetchButton";
+        FetchButton.Location = new System.Drawing.Point(610, 383);
+        FetchButton.Name = "FetchButton";
+        FetchButton.Size = new System.Drawing.Size(75, 23);
+        FetchButton.TabIndex = 2;
+        FetchButton.Text = "fetch";
+        FetchButton.UseVisualStyleBackColor = true;
+        FetchButton.Click += FetchButton_Click;
         // 
         // DatabaseViewForm
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(800, 450);
-        Controls.Add(button);
+        Controls.Add(FetchButton);
         Controls.Add(PasswordTextBox);
-        Controls.Add(listView1);
+        Controls.Add(UserListView);
         Text = "Form1";
         ResumeLayout(false);
         PerformLayout();
     }
 
-    private System.Windows.Forms.Button button;
+    private System.Windows.Forms.Button FetchButton;
 
     private System.Windows.Forms.TextBox PasswordTextBox;
 
@@ -114,7 +117,7 @@ partial class DatabaseViewForm
 
     private System.Windows.Forms.ColumnHeader idCol;
 
-    private System.Windows.Forms.ListView listView1;
+    private System.Windows.Forms.ListView UserListView;
 
     #endregion
 }

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DatabaseConnection
-build_property.ProjectDir = C:\Users\stepa\Desktop\DatabaseConnect\DatabaseConnection\
+build_property.ProjectDir = C:\Users\stepan.zdansky\Desktop\Database-DesignerApp\DatabaseConnection\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

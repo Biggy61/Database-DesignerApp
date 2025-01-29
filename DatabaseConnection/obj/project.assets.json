@@ -1796,20 +1796,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\stepa\\.nuget\\packages\\": {}
+    "C:\\Users\\stepan.zdansky\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\stepa\\Desktop\\DatabaseConnect\\DatabaseConnection\\DatabaseConnection.csproj",
+      "projectUniqueName": "C:\\Users\\stepan.zdansky\\Desktop\\Database-DesignerApp\\DatabaseConnection\\DatabaseConnection.csproj",
       "projectName": "DatabaseConnection",
-      "projectPath": "C:\\Users\\stepa\\Desktop\\DatabaseConnect\\DatabaseConnection\\DatabaseConnection.csproj",
-      "packagesPath": "C:\\Users\\stepa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\stepa\\Desktop\\DatabaseConnect\\DatabaseConnection\\obj\\",
+      "projectPath": "C:\\Users\\stepan.zdansky\\Desktop\\Database-DesignerApp\\DatabaseConnection\\DatabaseConnection.csproj",
+      "packagesPath": "C:\\Users\\stepan.zdansky\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\stepan.zdansky\\Desktop\\Database-DesignerApp\\DatabaseConnection\\obj\\",
       "projectStyle": "PackageReference",
-      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "C:\\Users\\stepa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\stepan.zdansky\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1865,7 +1864,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
