@@ -29,6 +29,7 @@ partial class DatabaseViewForm
     /// </summary>
     private void InitializeComponent()
     {
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatabaseViewForm));
         UserListView = new System.Windows.Forms.ListView();
         idCol = new System.Windows.Forms.ColumnHeader();
         nameCol = new System.Windows.Forms.ColumnHeader();
@@ -43,13 +44,20 @@ partial class DatabaseViewForm
         label2 = new System.Windows.Forms.Label();
         Delete_TextBox = new System.Windows.Forms.TextBox();
         Delete_Button = new System.Windows.Forms.Button();
+        SearchBox = new System.Windows.Forms.TextBox();
+        SearchResult = new System.Windows.Forms.ListView();
+        columnHeader1 = new System.Windows.Forms.ColumnHeader();
+        columnHeader2 = new System.Windows.Forms.ColumnHeader();
+        columnHeader3 = new System.Windows.Forms.ColumnHeader();
+        columnHeader4 = new System.Windows.Forms.ColumnHeader();
+        SearchBtn = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // UserListView
         // 
         UserListView.AccessibleName = "UserListView";
         UserListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { idCol, nameCol, dateCreated, dateModified });
-        UserListView.Location = new System.Drawing.Point(142, 43);
+        UserListView.Location = new System.Drawing.Point(136, 111);
         UserListView.Name = "UserListView";
         UserListView.Size = new System.Drawing.Size(371, 257);
         UserListView.TabIndex = 0;
@@ -104,9 +112,10 @@ partial class DatabaseViewForm
         // ErrorLabel
         // 
         ErrorLabel.AccessibleName = "ErrorLabel";
-        ErrorLabel.Location = new System.Drawing.Point(314, 401);
+        ErrorLabel.ForeColor = System.Drawing.Color.HotPink;
+        ErrorLabel.Location = new System.Drawing.Point(64, 383);
         ErrorLabel.Name = "ErrorLabel";
-        ErrorLabel.Size = new System.Drawing.Size(100, 23);
+        ErrorLabel.Size = new System.Drawing.Size(336, 23);
         ErrorLabel.TabIndex = 3;
         // 
         // label1
@@ -126,6 +135,7 @@ partial class DatabaseViewForm
         Insert_TextBox.Name = "Insert_TextBox";
         Insert_TextBox.Size = new System.Drawing.Size(100, 23);
         Insert_TextBox.TabIndex = 5;
+        Insert_TextBox.KeyDown += Insert_TextBox_KeyDown;
         // 
         // Insert_Button
         // 
@@ -155,6 +165,7 @@ partial class DatabaseViewForm
         Delete_TextBox.Name = "Delete_TextBox";
         Delete_TextBox.Size = new System.Drawing.Size(100, 23);
         Delete_TextBox.TabIndex = 8;
+        Delete_TextBox.KeyDown += Delete_TextBox_KeyDown;
         // 
         // Delete_Button
         // 
@@ -167,11 +178,66 @@ partial class DatabaseViewForm
         Delete_Button.UseVisualStyleBackColor = true;
         Delete_Button.Click += Delete_Button_Click;
         // 
+        // SearchBox
+        // 
+        SearchBox.Location = new System.Drawing.Point(136, 25);
+        SearchBox.Name = "SearchBox";
+        SearchBox.Size = new System.Drawing.Size(179, 23);
+        SearchBox.TabIndex = 10;
+        // 
+        // SearchResult
+        // 
+        SearchResult.AccessibleName = "UserListView";
+        SearchResult.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
+        SearchResult.Location = new System.Drawing.Point(136, 54);
+        SearchResult.Name = "SearchResult";
+        SearchResult.Size = new System.Drawing.Size(371, 51);
+        SearchResult.TabIndex = 11;
+        SearchResult.UseCompatibleStateImageBehavior = false;
+        SearchResult.View = System.Windows.Forms.View.Details;
+        // 
+        // columnHeader1
+        // 
+        columnHeader1.Name = "idCol";
+        columnHeader1.Text = "Id";
+        columnHeader1.Width = 71;
+        // 
+        // columnHeader2
+        // 
+        columnHeader2.Name = "nameCol";
+        columnHeader2.Text = "name";
+        // 
+        // columnHeader3
+        // 
+        columnHeader3.Name = "dateCreated";
+        columnHeader3.Text = "dateCreated";
+        columnHeader3.Width = 92;
+        // 
+        // columnHeader4
+        // 
+        columnHeader4.Name = "dateModified";
+        columnHeader4.Text = "dateModified";
+        columnHeader4.Width = 107;
+        // 
+        // SearchBtn
+        // 
+        SearchBtn.AccessibleName = "Insert_Button";
+        SearchBtn.Location = new System.Drawing.Point(325, 24);
+        SearchBtn.Name = "SearchBtn";
+        SearchBtn.Size = new System.Drawing.Size(75, 23);
+        SearchBtn.TabIndex = 12;
+        SearchBtn.Text = "Insert";
+        SearchBtn.UseVisualStyleBackColor = true;
+        // 
         // DatabaseViewForm
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        BackgroundImage = ((System.Drawing.Image)resources.GetObject("$this.BackgroundImage"));
         ClientSize = new System.Drawing.Size(800, 450);
+        Controls.Add(SearchBtn);
+        Controls.Add(SearchResult);
+        Controls.Add(SearchBox);
         Controls.Add(Delete_Button);
         Controls.Add(Delete_TextBox);
         Controls.Add(label2);
@@ -186,6 +252,14 @@ partial class DatabaseViewForm
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.TextBox SearchBox;
+    private System.Windows.Forms.ListView SearchResult;
+    private System.Windows.Forms.ColumnHeader columnHeader1;
+    private System.Windows.Forms.ColumnHeader columnHeader2;
+    private System.Windows.Forms.ColumnHeader columnHeader3;
+    private System.Windows.Forms.ColumnHeader columnHeader4;
+    private System.Windows.Forms.Button SearchBtn;
 
     private System.Windows.Forms.Button Delete_Button;
 

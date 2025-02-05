@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\stepan.zdansky\\.nuget\\packages\\": {}
+    "C:\\Users\\lukas.pavlicek\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\stepan.zdansky\\Desktop\\Database-DesignerApp\\CookieClicker\\CookieClicker.csproj",
+      "projectUniqueName": "C:\\Users\\lukas.pavlicek\\Desktop\\Database-DesignerApp\\CookieClicker\\CookieClicker.csproj",
       "projectName": "CookieClicker",
-      "projectPath": "C:\\Users\\stepan.zdansky\\Desktop\\Database-DesignerApp\\CookieClicker\\CookieClicker.csproj",
-      "packagesPath": "C:\\Users\\stepan.zdansky\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\stepan.zdansky\\Desktop\\Database-DesignerApp\\CookieClicker\\obj\\",
+      "projectPath": "C:\\Users\\lukas.pavlicek\\Desktop\\Database-DesignerApp\\CookieClicker\\CookieClicker.csproj",
+      "packagesPath": "C:\\Users\\lukas.pavlicek\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lukas.pavlicek\\Desktop\\Database-DesignerApp\\CookieClicker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\stepan.zdansky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lukas.pavlicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\lukas.pavlicek\\.dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

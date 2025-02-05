@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\stepan.zdansky\\Desktop\\Database-DesignerApp\\DatabaseViewForm\\DatabaseViewForm.csproj": {}
+    "C:\\Users\\lukas.pavlicek\\Desktop\\Database-DesignerApp\\DatabaseViewForm\\DatabaseViewForm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\stepan.zdansky\\Desktop\\Database-DesignerApp\\DatabaseViewForm\\DatabaseViewForm.csproj": {
+    "C:\\Users\\lukas.pavlicek\\Desktop\\Database-DesignerApp\\DatabaseViewForm\\DatabaseViewForm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\stepan.zdansky\\Desktop\\Database-DesignerApp\\DatabaseViewForm\\DatabaseViewForm.csproj",
+        "projectUniqueName": "C:\\Users\\lukas.pavlicek\\Desktop\\Database-DesignerApp\\DatabaseViewForm\\DatabaseViewForm.csproj",
         "projectName": "DatabaseViewForm",
-        "projectPath": "C:\\Users\\stepan.zdansky\\Desktop\\Database-DesignerApp\\DatabaseViewForm\\DatabaseViewForm.csproj",
-        "packagesPath": "C:\\Users\\stepan.zdansky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\stepan.zdansky\\Desktop\\Database-DesignerApp\\DatabaseViewForm\\obj\\",
+        "projectPath": "C:\\Users\\lukas.pavlicek\\Desktop\\Database-DesignerApp\\DatabaseViewForm\\DatabaseViewForm.csproj",
+        "packagesPath": "C:\\Users\\lukas.pavlicek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lukas.pavlicek\\Desktop\\Database-DesignerApp\\DatabaseViewForm\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\stepan.zdansky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lukas.pavlicek\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\lukas.pavlicek\\.dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

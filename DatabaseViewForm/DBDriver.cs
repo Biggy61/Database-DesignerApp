@@ -1,3 +1,4 @@
+using System.Data;
 using MySqlConnector;
 
 namespace DatabaseViewForm;
@@ -5,9 +6,9 @@ namespace DatabaseViewForm;
 public class DBDriver
 {
     private static string ServerDomain = "vydb1.spsmb.cz";
-    private static string Username = "stepan.zdansky";
+    private static string Username = "lukas.pavlicek";
     private static string Password = "";
-    private static string Database = "student_stepan.zdansky_duolingo";
+    private static string Database = "student_lukas.pavlicek_duolingo";
 
     private static string connectionString =>
         $"Server={ServerDomain};Database={Database};User={Username};Password={Password};Port=3306;";
@@ -71,6 +72,7 @@ public class DBDriver
             catch (MySqlException ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
+                ThrownException = ex;
             }
         }
     }
@@ -87,14 +89,16 @@ public class DBDriver
                            connection))
                 {
                     command.Parameters.AddWithValue("@id", ID);
-                    command.ExecuteNonQuery();
+                    int rowsAffected = command.ExecuteNonQuery();
+                    if (rowsAffected == 0)
+                        throw new Exception("User not found");
                 }
-
                 connection.Close();
             }
             catch (MySqlException ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
+                ThrownException = ex;
             }
         }
     }

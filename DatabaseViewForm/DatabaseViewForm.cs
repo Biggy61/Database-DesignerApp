@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace DatabaseViewForm;
 
 public partial class DatabaseViewForm : Form
@@ -93,11 +95,58 @@ public partial class DatabaseViewForm : Form
     private void Insert_Button_Click(object sender, EventArgs e)
     {
         _dbDriver.Insert(Insert_TextBox.Text);
+        Insert_TextBox.Text = "";
+        LoadUsers();
     }
 
+    private void Insert_TextBox_KeyDown(object sender, KeyEventArgs e)
+    {
+        if (e.KeyCode == Keys.Enter)
+        {
+            _dbDriver.Insert((Insert_TextBox.Text));
+            Insert_TextBox.Text = "";
+            LoadUsers();
+        }
+    }
 
     private void Delete_Button_Click(object sender, EventArgs e)
     {
-        _dbDriver.Delete((Delete_TextBox.Text));
+        deleteUser();
+    }
+
+    private void Delete_TextBox_KeyDown(object sender, KeyEventArgs e)
+    {
+        if (e.KeyCode == Keys.Enter)
+        {
+            deleteUser();
+        }
+    }
+
+    private void deleteUser()
+    {
+        if (!Regex.IsMatch(Delete_TextBox.Text, @"^(\s*[0-9]+\s*,?\s*)+$"))
+        {
+            ErrorLabel.Text = "Please enter a valid number";
+        }
+        else
+        {
+            var ids = Delete_TextBox.Text.Split(',');
+            foreach (var id in ids)
+            {
+                id.Trim();
+
+                try
+                {
+                    _dbDriver.Delete(id);
+                }
+                catch (Exception ex)
+                {
+                    ErrorLabel.Text = ex.Message;
+                }
+            }
+        }
+            
+        Delete_TextBox.Text = "";
+        LoadUsers();
     }
 }
