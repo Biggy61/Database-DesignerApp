@@ -66,24 +66,24 @@ partial class DatabaseViewForm
         // 
         // idCol
         // 
-        idCol.Name = "idCol";
+        idCol.Name = "idCollumm";
         idCol.Text = "Id";
         idCol.Width = 71;
         // 
         // nameCol
         // 
-        nameCol.Name = "nameCol";
+        nameCol.Name = "nameColllum";
         nameCol.Text = "name";
         // 
         // dateCreated
         // 
-        dateCreated.Name = "dateCreated";
+        dateCreated.Name = "dateCr";
         dateCreated.Text = "dateCreated";
         dateCreated.Width = 92;
         // 
         // dateModified
         // 
-        dateModified.Name = "dateModified";
+        dateModified.Name = "dateMd";
         dateModified.Text = "dateModified";
         dateModified.Width = 107;
         // 

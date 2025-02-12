@@ -4,7 +4,7 @@ namespace DatabaseViewForm;
 
 public partial class DatabaseViewForm : Form
 {
-    private DBDriver _dbDriver;
+    public DBDriver _dbDriver;
 
     public DatabaseViewForm()
     {
