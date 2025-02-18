@@ -8,7 +8,7 @@ public class DBDriver
     private static string ServerDomain = "localhost";
     private static string Username = "root";
     private static string Password = "";
-    private static string Database = "duolingo_biggy";
+    private static string Database = "duolingo";
 
     private static string connectionString =>
         $"Server={ServerDomain};Database={Database};User={Username};Password={Password};Port=3306;";

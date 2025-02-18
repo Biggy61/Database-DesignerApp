@@ -9,4 +9,5 @@ public partial class Navigation : UserControl
         _parentForm = parentForm;
         InitializeComponent();
     }
+    
 }

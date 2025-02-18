@@ -25,15 +25,34 @@ partial class Navigation
 
     #region Component Designer generated code
 
-    /// <summary> 
-    /// Required method for Designer support - do not modify 
+    /// <summary>
+    /// Required method for Designer support - do not modify
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent()
     {
-        components = new System.ComponentModel.Container();
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        button1 = new System.Windows.Forms.Button();
+        SuspendLayout();
+        // 
+        // button1
+        // 
+        button1.Location = new System.Drawing.Point(466, 278);
+        button1.Name = "button1";
+        button1.Size = new System.Drawing.Size(75, 23);
+        button1.TabIndex = 0;
+        button1.Text = "button1";
+        button1.UseVisualStyleBackColor = true;
+        // 
+        // Navigation
+        // 
+        AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        Controls.Add(button1);
+        Size = new System.Drawing.Size(1049, 819);
+        ResumeLayout(false);
     }
+
+    private System.Windows.Forms.Button button1;
 
     #endregion
 }

@@ -1,47 +1,17 @@
-using DatabaseViewForm.Nav;
+namespace DatabaseViewForm.Nav;
 
-namespace DatabaseViewForm;
-
-public partial class BaseForm : Form
+public partial class Login : UserControl
 {
+    private readonly BaseForm _parentForm;
     public DBDriver _dbDriver;
-    private Languages _language;
-    private Navigation _navigation;
-    private Registration _registration;
-    private Users _users;
-    private UserControl _currentView;
-    public enum Forms
+    public Login(BaseForm parentForm)
     {
-        Language,
-        Navigation,
-        Registration,
-        Users,
-    }
-    public BaseForm()
-    {
+        _parentForm = parentForm;
         InitializeComponent();
-        _language = new Languages(this);
-        _navigation = new Navigation(this);
-        _registration = new Registration(this);
-        
     }
-
-    public void SwitchLanguage(Forms form)
-    {
-        Controls.Remove(_currentView);
-        _currentView = form switch
-        {
-            Forms.Language => _language,
-            Forms.Navigation => _navigation,
-            Forms.Registration => _registration,
-            Forms.Users => _users,
-        };
-        Controls.Add(_currentView);
-    }
-
     private void PasswordButton_Click(object sender, EventArgs e)
     {
-        Login();
+        LogIn();
     }
 
 
@@ -68,13 +38,13 @@ public partial class BaseForm : Form
         }
     }
 
-    private void Login()
+    private void LogIn()
     {
         ErrorLabel.Text = "";
         if (_dbDriver is null)
         {
             _dbDriver = new DBDriver(PasswordTextBox.Text);
-            SwitchLanguage(Forms.Navigation);
+            _parentForm.SwitchLanguage(BaseForm.Forms.Navigation);
         }
 
         PasswordTextBox.Text = "";
@@ -85,7 +55,7 @@ public partial class BaseForm : Form
     {
         if (e.KeyCode == Keys.Enter)
         {
-            Login();
+            LogIn();
         }
     }
 }

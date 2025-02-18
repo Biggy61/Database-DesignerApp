@@ -28,6 +28,9 @@
       <Compile Update="Nav\Navigation.cs">
         <SubType>UserControl</SubType>
       </Compile>
+      <Compile Update="Nav\Login.cs">
+        <SubType>UserControl</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
