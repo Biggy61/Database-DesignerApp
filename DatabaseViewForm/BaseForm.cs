@@ -10,12 +10,14 @@ public partial class BaseForm : Form
     private Registration _registration;
     private Users _users;
     private UserControl _currentView;
+    private Login _login;
     public enum Forms
     {
         Language,
         Navigation,
         Registration,
         Users,
+        Login,
     }
     public BaseForm()
     {
@@ -23,7 +25,8 @@ public partial class BaseForm : Form
         _language = new Languages(this);
         _navigation = new Navigation(this);
         _registration = new Registration(this);
-        
+        _login = new Login(this);
+        SwitchLanguage(Forms.Login);
     }
 
     public void SwitchLanguage(Forms form)
@@ -35,57 +38,9 @@ public partial class BaseForm : Form
             Forms.Navigation => _navigation,
             Forms.Registration => _registration,
             Forms.Users => _users,
+            Forms.Login => _login,
         };
         Controls.Add(_currentView);
     }
 
-    private void PasswordButton_Click(object sender, EventArgs e)
-    {
-        Login();
-    }
-
-
-    private void PasswordTextBox_Enter(object sender, EventArgs e)
-    {
-        PasswordTextBox.Text = "";
-
-        PasswordTextBox.ForeColor = Color.Black;
-
-        PasswordTextBox.UseSystemPasswordChar = true;
-    }
-
-    private void PasswordTextBox_Leave(object sender, EventArgs e)
-    {
-        if (PasswordTextBox.Text.Length == 0)
-        {
-            PasswordTextBox.ForeColor = Color.Gray;
-
-            PasswordTextBox.Text = "Enter password";
-
-            PasswordTextBox.UseSystemPasswordChar = false;
-
-            SelectNextControl(PasswordTextBox, true, true, false, true);
-        }
-    }
-
-    private void Login()
-    {
-        ErrorLabel.Text = "";
-        if (_dbDriver is null)
-        {
-            _dbDriver = new DBDriver(PasswordTextBox.Text);
-            SwitchLanguage(Forms.Navigation);
-        }
-
-        PasswordTextBox.Text = "";
-        
-    }
-
-    private void PasswordTextBox_KeyDown(object sender, KeyEventArgs e)
-    {
-        if (e.KeyCode == Keys.Enter)
-        {
-            Login();
-        }
-    }
 }

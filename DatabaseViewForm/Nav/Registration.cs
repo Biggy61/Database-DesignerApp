@@ -9,4 +9,9 @@ public partial class Registration : UserControl
         _parentForm = parentForm;
         InitializeComponent();
     }
+
+    private void BackButton_Click(object sender, EventArgs e)
+    {
+        _parentForm.SwitchLanguage(BaseForm.Forms.Navigation);
+    }
 }
