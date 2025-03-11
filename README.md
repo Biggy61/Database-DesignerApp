@@ -1,2 +1,2 @@
-# CookieClicker & Database app 
+# WinForms app
 using Designer, MySqlConnector
