@@ -87,8 +87,6 @@ C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\bin\Debu
 C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\bin\Debug\net8.0-windows\MySqlConnector.dll
 C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\obj\Debug\net8.0-windows\DatabaseViewForm.csproj.AssemblyReference.cache
-C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\obj\Debug\net8.0-windows\DatabaseViewForm.DatabaseViewForm.resources
-C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\obj\Debug\net8.0-windows\DatabaseViewForm.csproj.GenerateResource.cache
 C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\obj\Debug\net8.0-windows\DatabaseViewForm.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\obj\Debug\net8.0-windows\DatabaseViewForm.AssemblyInfoInputs.cache
 C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\obj\Debug\net8.0-windows\DatabaseViewForm.AssemblyInfo.cs
@@ -100,3 +98,5 @@ C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\obj\Debu
 C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\obj\Debug\net8.0-windows\DatabaseViewForm.pdb
 C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\obj\Debug\net8.0-windows\DatabaseViewForm.genruntimeconfig.cache
 C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\obj\Debug\net8.0-windows\ref\DatabaseViewForm.dll
+C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\obj\Debug\net8.0-windows\DatabaseViewForm.Nav.Users.resources
+C:\Users\stepa\Desktop\Everything\Database-DesignerApp\DatabaseViewForm\obj\Debug\net8.0-windows\DatabaseViewForm.csproj.GenerateResource.cache

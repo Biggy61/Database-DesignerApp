@@ -22,6 +22,7 @@ public partial class BaseForm : Form
     public BaseForm()
     {
         InitializeComponent();
+        _users = new Users(this);
         _language = new Languages(this);
         _navigation = new Navigation(this);
         _registration = new Registration(this);

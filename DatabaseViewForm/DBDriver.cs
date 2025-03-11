@@ -8,27 +8,23 @@ public class DBDriver
     private static string ServerDomain = "localhost";
     private static string Username = "root";
     private static string Password = "";
-    private static string Database = "duolingo";
+    private static string Database = "penis";
 
     private static string connectionString =>
         $"Server={ServerDomain};Database={Database};User={Username};Password={Password};Port=3306;";
 
-    public MySqlException? ThrownException;
+    public static MySqlException? ThrownException;
 
     public DBDriver(string password)
     {
         Password = password;
     }
+    
 
-    public MySqlConnection GetConnection()
-    {
-        return new MySqlConnection(connectionString);
-    }
-
-    public List<User> GetUsers()
+    public static List<User> GetUsers()
     {
         List<User> users = new List<User>();
-        MySqlConnection connection = GetConnection();
+        MySqlConnection connection = new MySqlConnection(connectionString);
         try
         {
             connection.Open();
@@ -52,7 +48,7 @@ public class DBDriver
         return users;
     }
 
-    public void Insert(string name)
+    public static void Insert(string name)
     {
         using (MySqlConnection connection = new MySqlConnection(connectionString))
         {
@@ -77,7 +73,7 @@ public class DBDriver
         }
     }
    
-    public void Delete(string ID)
+    public static void Delete(string ID)
     {
         using (MySqlConnection connection = new MySqlConnection(connectionString))
         {
