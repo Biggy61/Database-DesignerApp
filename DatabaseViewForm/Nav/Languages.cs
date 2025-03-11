@@ -55,6 +55,7 @@ public partial class Languages : UserControl
     {
         if (InsertLanguages_TextBox.Text == "")
         {
+            ErrorLabel.Text = "you must enter the name";
         }
         else
         {
@@ -68,6 +69,7 @@ public partial class Languages : UserControl
     {
         if (InsertLanguages_TextBox.Text == "")
         {
+            ErrorLabel.Text = "you must enter the name";
         }
         else
         {

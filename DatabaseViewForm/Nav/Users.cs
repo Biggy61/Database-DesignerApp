@@ -61,6 +61,7 @@ public partial class Users : UserControl
     {
         if (Insert_TextBox.Text == "")
         {
+            ErrorLabel.Text = "you must enter the name";
         }
         else
         {
@@ -74,6 +75,7 @@ public partial class Users : UserControl
     {
         if (Insert_TextBox.Text == "")
         {
+            ErrorLabel.Text = "you must enter the name";
         }
         else
         {
