@@ -5,6 +5,9 @@
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=CookieClicker_002FDatabaseView/@EntryIndexRemoved">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=DatabaseViewForm_002FDatabaseViewForm/@EntryIndexedValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=DatabaseViewForm_002FDatabaseViewForm/@EntryIndexRemoved">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=DatabaseViewForm_002FNavUser_002FUsers/@EntryIndexRemoved">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=DatabaseViewForm_002FNav_002FUsers/@EntryIndexedValue">True</s:Boolean>
+	
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=DatabaseViewForm_002FNavUser_002FUsers/@EntryIndexedValue">False</s:Boolean>
 	
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>

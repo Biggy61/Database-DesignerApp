@@ -47,6 +47,33 @@ public class DBDriver
         // return list
         return users;
     }
+    
+    public static List<Language> GetLanguages()
+    {
+        List<Language> Language = new List<Language>();
+        MySqlConnection connection = new MySqlConnection(connectionString);
+        try
+        {
+            connection.Open();
+            string query = "SELECT * FROM languages";
+            MySqlCommand command = new MySqlCommand(query, connection);
+            // execute reader
+            var reader = command.ExecuteReader();
+            // while reader.next
+            while (reader.Read())
+            {
+                Language.Add(new Language(reader.GetInt32(0), reader.GetString(1), reader.GetDateTime(2),
+                    reader.GetDateTime(3)));
+            }
+        }
+        catch (MySqlException ex)
+        {
+            ThrownException = ex;
+        }
+
+        // return list
+        return Language;
+    }
 
     public static void Insert(string name)
     {
@@ -82,6 +109,56 @@ public class DBDriver
                 connection.Open();
                 using (var command = new MySqlCommand(
                            " DELETE FROM users WHERE id=@id",
+                           connection))
+                {
+                    command.Parameters.AddWithValue("@id", ID);
+                    int rowsAffected = command.ExecuteNonQuery();
+                    if (rowsAffected == 0)
+                        throw new Exception("User not found");
+                }
+                connection.Close();
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                ThrownException = ex;
+            }
+        }
+    }
+    public static void InsertLanguage(string name)
+    {
+        using (MySqlConnection connection = new MySqlConnection(connectionString))
+        {
+            try
+            {
+                connection.Open();
+                using (var command = new MySqlCommand(
+                           "INSERT INTO languages VALUES (NULL, @username, current_timestamp(), current_timestamp())",
+                           connection))
+                {
+                    command.Parameters.AddWithValue("@username", name);
+                    command.ExecuteNonQuery();
+                }
+
+                connection.Close();
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                ThrownException = ex;
+            }
+        }
+    }
+   
+    public static void DeleteLanguages(string ID)
+    {
+        using (MySqlConnection connection = new MySqlConnection(connectionString))
+        {
+            try
+            {
+                connection.Open();
+                using (var command = new MySqlCommand(
+                           " DELETE FROM languages WHERE id=@id",
                            connection))
                 {
                     command.Parameters.AddWithValue("@id", ID);

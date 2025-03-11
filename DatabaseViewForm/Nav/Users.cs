@@ -5,6 +5,7 @@ namespace DatabaseViewForm.Nav;
 public partial class Users : UserControl
 {
     private readonly BaseForm _parentForm;
+
     public Users(BaseForm parentForm)
     {
         _parentForm = parentForm;
@@ -21,6 +22,7 @@ public partial class Users : UserControl
     {
         throw new System.NotImplementedException();
     }
+
     private void PopulateListView(List<User> users)
     {
         UserListView.Items.Clear();
@@ -54,21 +56,33 @@ public partial class Users : UserControl
     {
         LoadUsers();
     }
-    
+
     private void Insert_Button_Click(object sender, EventArgs e)
     {
-        DBDriver.Insert(Insert_TextBox.Text);
-        Insert_TextBox.Text = "";
-        LoadUsers();
+        if (Insert_TextBox.Text == "")
+        {
+        }
+        else
+        {
+            DBDriver.Insert(Insert_TextBox.Text);
+            Insert_TextBox.Text = "";
+            LoadUsers();
+        }
     }
 
     private void Insert_TextBox_KeyDown(object sender, KeyEventArgs e)
     {
-        if (e.KeyCode == Keys.Enter)
+        if (Insert_TextBox.Text == "")
         {
-            DBDriver.Insert((Insert_TextBox.Text));
-            Insert_TextBox.Text = "";
-            LoadUsers();
+        }
+        else
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                DBDriver.Insert((Insert_TextBox.Text));
+                Insert_TextBox.Text = "";
+                LoadUsers();
+            }
         }
     }
 
@@ -108,10 +122,8 @@ public partial class Users : UserControl
                 }
             }
         }
-            
+
         Delete_TextBox.Text = "";
         LoadUsers();
     }
-
-    
 }

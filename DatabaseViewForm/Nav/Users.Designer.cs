@@ -112,6 +112,7 @@ partial class Users
         Insert_Button.TabIndex = 2;
         Insert_Button.Text = "Insert";
         Insert_Button.UseVisualStyleBackColor = true;
+        Insert_Button.Click += Insert_Button_Click;
         // 
         // Delete_Button
         // 
